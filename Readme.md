@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Мулярчик](https://up.htmlacademy.ru/adaptive/11/user/382187).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Деркач](https://htmlacademy.ru/profile/id87719).
 
 ---
 
