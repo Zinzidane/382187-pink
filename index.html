@@ -8,27 +8,30 @@
     <header class="page-header">
       <h1 class="page-header__title">Мобильное приложение Пинк</h1><!--Скрыт-->
       <div class="page-header__logo">
-        <img src="img/logo.svg" width="75" height="22" alt="Логотип"></img>
+        <img src="img/logo.svg" width="75" height="22" alt="Логотип">
       </div>
       <nav class="main-nav  main-nav--open">
-        <button class="main-nav__toggler"><span></span></button>
+        <button class="main-nav__toggler">Закрыть<img src="close.svg" alt=""></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--active">Главная</li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active">Главная</li>
-          <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
     </header>
     <main class="page-content">
+      <section class="promo">
+        <img src="img/phone.jpg" alt="Фотография телефона">
+      </section>
       <section class="download">
         <a class="download__btn btn" href="https://www.apple.com/itunes/" ">Скачать приложение</a>
         <ul class="download__list">
@@ -65,68 +68,49 @@
               <p class="advantages__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ol>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews-wrapper">
-          <h2 class="reviews-title">Отзывы о нас</h2><!--Скрыт-->
-          <div class="reviews__slider‐wrapper slider">
-            <div class="reviews__list‐wrapper slider__wrapper">
-              <div class="reviews__list slider__inner">
-                <blockquote class="reviews__item slider__item">
-                   <cite class="reviews__auhor‐name">Николай Петров</cite>
-                   <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </blockquote>
-              </div>
-              <div class="reviews__list slider__inner">
-                <blockquote class="reviews__item slider__item">
-                   <cite class="reviews__auhor‐name">Николай Петров</cite>
-                   <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </blockquote>
-              </div>
-              <div class="reviews__list slider__inner">
-                <blockquote class="reviews__item slider__item">
-                   <cite class="reviews__auhor‐name">Николай Петров</cite>
-                   <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </blockquote>
-              </div>
-            </div>
+          <div class="advantages__photo">
+            <img src="phonescreen" alt="Фотография приложения">
           </div>
         </div>
       </section>
-      <section class="offers">
-        <h2 class="offers-title">Наши предложения</h2><!--Скрыт-->
-        <table class="offers__table">
-          <tr class="offers__table-row1">
-            <th class="offers__item">
-              <span class="offers__item-name">Стандарт</span>
-              <span class="offers__item-price">3,99 USD</span>
-            </th>
-            <th class="offers__item">
-              <span class="offers__item-name">Стандарт</span>
-              <span class="offers__item-price">3,99 USD</span>
-            </th>
-            <th class="offers__item">
-              <span class="offers__item-name">Стандарт</span>
-              <span class="offers__item-price">3,99 USD</span>
-            </th>
-          </tr>
-          <tr class="offers__table-row2">
-            <td class="offers__item-feature">Розовый фильтр</td>
-            <td class="offers__item-feature">Розовый фильтр</td>
-            <td class="offers__item-feature">Розовый фильтр</td>
-          </tr>
-          <tr class="offers__table-row3">
-            <td class="offers__item-feature">Смайлики</td>
-            <td class="offers__item-feature">Смайлики</td>
-            <td class="offers__item-feature">Смайлики</td>
-          </tr>
-          <tr class="offers__table-row4">
-            <td class="offers__item-feature">Комментарии</td>
-            <td class="offers__item-feature">Комментарии</td>
-            <td class="offers__item-feature">Комментарии</td>
-          </tr>
-        </table>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+          <ul class="reviews__items">
+            <li class="reviews__item slider__item">
+              <b class="reviews__item-title">Николай Петров </b>
+              <p class="reviews__item-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+          <div class="reviews__toggles slider__toggles">
+            <label class="slider__toggle" for="reviews-input-1">1</label>
+            <label class="slider__toggle" for="reviews-input-2">2</label>
+            <label class="slider__toggle" for="reviews-input-3">3</label>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__wrapper slider">
+          <input class="price__input" type="radio" name="price" id="price-input-1">
+          <input class="price__input" type="radio" name="price" id="price-input-2" checked>
+          <input class="price__input" type="radio" name="price" id="price-input-3">
+          <ul class="price__item">
+            <li class="price__title">
+              <div class="price__item-title">Стандарт</div>
+              <div class="price__value">3.99 USD</div>
+            </li>
+            <li class="price__access">Розовый фильтр</li>
+            <li class="price__access">Смайлики</li>
+            <li class="price__access">Комментарии</li>
+          </ul>
+          <div class="advantages__toggles slider__toggles">
+            <label class="slider__toggle" for="price-input-1">1</label>
+            <label class="slider__toggle" for="price-input-2">2</label>
+            <label class="slider__toggle" for="price-input-3">3</label>
+          </div>
+        </div>
       </section>
       <section class="feedback">
         <h2 class="feedback__title">Обратная связь</h2><!--Скрыт-->

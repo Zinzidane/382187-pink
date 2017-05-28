@@ -7,80 +7,81 @@
   <body>
     <header class="page-header">
         <div class="page-header__logo">
-          <img src="img/logo.svg" width="75" height="22" alt="Логотип"></img>
+          <img src="img/logo.svg" width="75" height="22" alt="Логотип">
         </div>
         <nav class="main-nav  main-nav--open">
-          <button class="main-nav__toggler"><span></span></button>
+          <button class="main-nav__toggler">Закрыть<img src="close.svg" alt=""></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item  main-nav__item--active">Конкурс</li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item  main-nav__item--active">Конкурс</li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
       </header>
       <main class="page-content">
         <section class="promo">
-            <h1 class="promo__title">Конкурс на самое бесбашенное путешествие с Пинк</h1>
+          <h1 class="promo__title">Конкурс на самое бесбашенное путешествие с Пинк</h1>
         </section>
-        <div class="form__wrapper">
-          <form class="form" action="https://echo.htmlacademy.ru/">
+        <form class="form" action="https://echo.htmlacademy.ru/">
+          <div class="form__wrapper">
             <p class="form__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-            <fieldset class="form__participant-name">
+            <fieldset class="form__group">
               <label class="form__label" for="surname">Фамилия</label>
-              <input type="text" id="name" name="surname" value="Укажите фамилию *">
+              <input type="text" id="surname" name="surname" value="Укажите фамилию *">
               <label class="form__label" for="name">Имя</label>
               <input type="text" id="name" name="name" value="Введите ваше имя *">
               <label class="form__label" for="middle-name">Отчество</label>
-              <input type="text" id="name" name="middle-name" value="Ну и отчество тоже">
+              <input type="text" id="middle-name" name="middle-name" value="Ну и отчество тоже">
             </fieldset>
-            <fieldset class="form__achievements">
-              <p class="form__achievenmts-title">Ваши бесбашенные достижения в путешествии</p>
-              <input class="form__achievenmts-input" type="checkbox" name="selfie" id="selfie" checked>
+            <fieldset class="form__group  form__group--grey">
+              <p class="form__text">Ваши бесбашенные достижения в путешествии</p>
+              <input class="form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
               <label for="selfie">Сделал селфи с акулой</label>
-              <input class="form__achievenmts-input" type="checkbox" name="beach" id="beach" checked>
+              <input class="form__checkbox" type="checkbox" name="beach" id="beach" checked>
               <label for="beach">Обгорел на пляже</label>
-              <input class="form__achievenmts-input" type="checkbox" name="chuck-norris" id="chuck-norris" >
+              <input class="form__checkbox" type="checkbox" name="chuck-norris" id="chuck-norris" >
               <label for="chuck-norris">Видел Чака Норриса</label>
-              <input class="form__achievenmts-input" type="checkbox" name="gifts" id="gifts" >
+              <input class="form__checkbox" type="checkbox" name="gifts" id="gifts" >
               <label for="gifts">Накупил сувениров</label>
-              <input class="form__achievenmts-input" type="checkbox" name="tower" id="tower" checked>
+              <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
               <label for="tower">Удержал башню</label>
-              <input class="form__achievenmts-input" type="checkbox" name="hotel" id="hotel">
+              <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
               <label for="hotel">Разгромил отель</label>
             </fieldset>
-            <fieldset class="form__contacts">
+            <fieldset class="form__group">
               <label class="form__label" for="tel">Номер телефона</label>
-              <input type="tel" id="name" name="tel" value="Номер пожалуйста">
+              <input type="tel" id="tel" name="tel" value="Номер пожалуйста">
               <label class="form__label" for="email">Адрес почты</label>
               <input type="email" id="email" name="email" value="Введите почту *">
             </fieldset>
-            <fieldset class="form__choice">
-              <p class="form__choice-question">С каким приложением путешествовали?</p>
-              <input type="radio" id="name" name="os" value="ios" checked>
-              <label class="form__label" for="ios">Pink для iOS</label>
+            <fieldset class="form__group  form__group--grey">
+              <p class="form__text">С каким приложением путешествовали?</p>
+              <input type="radio" id="ios" name="os" value="ios" checked>
+              <label class="form__radio" for="ios">Pink для iOS</label>
               <input type="radio" id="android" name="os" value="android">
-              <label class="form__label" for="android">Pink на Android</label>
+              <label class="form__radio" for="android">Pink на Android</label>
               <input type="radio" id="windows" name="os" value="windows">
-              <label class="form__label" for="windows">Windows Phone</label>
+              <label class="form__radio" for="windows">Windows Phone</label>
             </fieldset>
-            <fieldset class="form__emotions">
+            <fieldset class="form__group">
+              <p class="form__text">Опишите свои эмоции</p>
               <textarea name="emotions" id="" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
             <button class="form__btn btn" type="submit">Отправить форму</button>
             <p class="form__reminder">* - Обязательные поля</p>
-          </form>
-        </div>
+          </div>
+        </form>
       </main>
-      <footer class="page-footer page-footer--show">
+      <footer class="page-footer">
         <section class="page-footer__logo">
           <a href="index.html"><img src="logo.svg" alt="Логотип"></a>
         </section>
