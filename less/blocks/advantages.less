@@ -1,41 +1,37 @@
 .advantages {
-  font-family: @font-family;
   color: #000000;
   background-color: #ffffff;
 
-
-  &__title {
+  .advantages__title {
     .visually-hidden();
   }
 
-
-  &__wrapper {
+  .advantages__wrapper {
     .inner();
     margin: 0 auto;
-    padding: 0;
+
+    &--grey {
+      background-color: rgb(242, 242, 242);;
+    }
   }
 
-
-  &__slogan {
+  .advantages__slogan {
     margin: 50px auto;
     font-size: 24px;
     font-weight: lighter;
     text-align: center;
   }
 
-
-  &__list {
+  .advantages__list {
     margin: 0;
+    padding: 0;
     padding-top: 47px;
     padding-bottom: 47px;
     list-style: none;
     text-align: center;
-    background-color: rgb(242, 242, 242);
   }
 
-
-  &__photo {
+  .advantages__photo {
     text-align: center;
-    background-color: rgb(242, 242, 242);
   }
 }
