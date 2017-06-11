@@ -1,37 +1,103 @@
 .advantages {
-  color: #000000;
+  text-align: center;
+  background-color: rgb(242, 242, 242);
+}
+
+.advantages__title {
+  .visually-hidden();
+}
+
+.advantages__promo {
+  padding-top: 40px;
+  text-align: center;
   background-color: #ffffff;
+}
 
-  .advantages__title {
-    .visually-hidden();
-  }
+.advantages__slogan {
+  .container();
+  padding-bottom: 37px;
+  font-size: 24px;
+  font-weight: lighter;
+}
 
-  .advantages__wrapper {
-    .inner();
-    margin: 0 auto;
+.advantages__wrapper {
+  .container();
+  display: flex;
+  flex-direction: column;
+}
 
-    &--grey {
-      background-color: rgb(242, 242, 242);;
-    }
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  list-style: none;
+  text-align: center;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item-photo {
+    display: none;
+}
+
+
+@media @tablet-widths {
+  .advantages__promo {
+    padding-top: 58px;
+    padding-bottom: 58px;
   }
 
   .advantages__slogan {
-    margin: 50px auto;
-    font-size: 24px;
-    font-weight: lighter;
-    text-align: center;
+    font-size: 40px;
+    line-height: auto;
+    margin-bottom: 0;
+  }
+
+  .advantages__wrapper {
+    flex-direction: row-reverse;
   }
 
   .advantages__list {
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
     padding-top: 47px;
-    padding-bottom: 47px;
-    list-style: none;
-    text-align: center;
+    padding-bottom: 37px;
   }
 
   .advantages__photo {
-    text-align: center;
+    display: block;
+  }
+}
+
+@media @desktop-widths {
+  .advantages__promo {
+    padding-top: 77px;
+    padding-bottom: 77px;
+  }
+
+  .advantages__slogan {
+    font-size: 50px;
+    line-height: auto;
+    margin-bottom: 0;
+  }
+
+  .advantages__list {
+    flex-direction: row-reverse;
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+
+  .advantages__item-photo {
+    display: block;
+    order: -1;
+  }
+
+  .advantages__photo {
+    display: none;
   }
 }

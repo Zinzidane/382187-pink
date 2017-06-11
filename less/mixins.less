@@ -9,7 +9,12 @@
   overflow: hidden;
 }
 
-.inner() {
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+.container() {
+  width: 87.5%;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 94%;
+    max-width: 940px;
+  }
 }
