@@ -8,13 +8,18 @@
   &--closed {
     background-color: rgba(29, 38, 50, 0.3);
   }
+
+  &--nojs {
+    min-height: 367px;
+    background-color: #263341;
+  }
 }
 
 .main-nav__logo {
+  top: 0;
   padding: 20px;
   padding-bottom: 25px;
   text-align: left;
-  top: 0;
 }
 
 .main-nav__toggler  {
@@ -56,15 +61,28 @@
 }
 
 .main-nav__item {
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-top: 1px solid #1d2631;
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 
+  &--active {
+    padding: 16px 0 15px 0;
+  }
+
   a {
     display: block;
+    padding: 16px 0;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
     color: #ffffff;
     text-decoration: none;
+
+    &:hover {
+      color: #d22856;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -156,7 +174,6 @@
   .main-nav__item a[href] {
     &:hover {
       color: #000000;
-
       background-color: #ffffff;
     }
 

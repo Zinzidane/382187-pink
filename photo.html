@@ -40,7 +40,7 @@
         <article class="gallery__post-daily">
           <div class="gallery__photo-daily">
             <a href="#">
-              <img src="img/panorama-mobile@1x.jpg" alt="Прыжок"></img>
+              <img src="img/panorama-mobile@1x.jpg" width="320" alt="Прыжок"></img>
             </a>
           </div>
           <div class="gallery__content-daily">
@@ -157,25 +157,29 @@
       </section>
       <section class="upload">
         <form action="https://echo.htmlacademy.ru/" class="upload__form">
-          <img class="upload__photo" src="img/photo-7-mobile@1x.jpg" alt="Загружаемое фото">
-          <div class="upload__btn-wrapper">
-            <button class="upload__btn upload__btn--cut" type="button">Обрезать<img src="cut.svg" alt=""></button>
-            <button class="upload__btn upload__btn--greyback" type="button">Грейбек<img src="greyback.svg" alt=""></button>
-            <button class="upload__btn upload__btn--contrast" type="button">Контраст<img src="contrast.svg" alt=""></button>
+          <div class="upload__photo">
+            <img src="img/photo-7-mobile@1x.jpg" alt="Загружаемое фото">
           </div>
-          <div class="upload__controls">
-            <input class="upload__range  upload__range--show" type="range" min="1" max="10">
-            <input class="upload__range" type="range" min="1" max="10">
-            <input class="upload__range" type="range" min="1" max="10">
+          <div class="upload__items-wrapper">
+            <div class="upload__items">
+              <div class="upload__item  upload__item--crop"></div>
+              <div class="upload__item  upload__item--fill"></div>
+              <div class="upload__item  upload__item--contrast"></div>
+            </div>
+            <div class="upload__controls">
+              <input type="range" class="upload__range  upload__range--visibility">
+              <input type="range" class="upload__range  upload__range--visibility">
+              <input type="range" class="upload__range">
+            </div>
+            <div class="upload__btns">
+              <button class="upload__btn  upload__btn-confirm" type="submit">Запостить</button>
+              <button class="upload__btn  upload__btn-cancel" type="reset">Отмена</button>
+            </div>
           </div>
-          <section class="upload__btns">
-            <input type="submit" value="Запостить">
-            <input type="reset" value="Отмена">
-          </section>
         </form>
       </section>
     </main>
-    <footer class="page-footer  fpage-footer--show">
+    <footer class="page-footer">
         <section class="page-footer__logo">
           <a href="index.html"><img src="logo.svg" alt="Логотип"></a>
         </section>
