@@ -1,62 +1,73 @@
 .price {
   padding-top: 92px;
   padding-bottom: 43px;
+
   td,
   th {
     padding: 13px 25px 16px 22px;
     border: 2px solid #e5e5e5;
     line-height: 30px;
   }
+
   th {
     border-top: none;
     border-bottom: none;
   }
+
   td {
     background-color: #ffffff;
   }
 }
+
 th.price__tariff-option {
   padding: 17px 25px 17px 25px;
 }
+
 .price__hide-td {
   border: none;
   display: none;
 }
+
 .price__inner {
+  margin: 0 auto;
   width: 320px;
   overflow: hidden;
-  margin: 0 auto;
 }
+
 .price__table {
   padding-top: 50px;
   margin-bottom: 31px;
   text-transform: uppercase;
   width: 840px;
+
   &--active {
     transform: translateX(-30.8%);
   }
 }
+
 .price__item {
-  white-space: nowrap;
-  text-align: left;
   padding-top: 7px;
   padding-bottom: 7px;
   line-height: 30px;
+  white-space: nowrap;
+  text-align: left;
+
   &--hide {
     display: none;
   }
 }
+
 .price__tariff-option {
-  text-align: center;
+  position: relative;
   padding-top: 20px;
   padding-bottom: 12px;
-  background-color: #263341;
+  width: 320px;
   text-align: center;
-  color: #fff;
-  width: 280px;
+  color: #ffffff;
   border-bottom: none;
-  position: relative;
+  background-color: #263341;
   overflow: hidden;
+
   &--standart {
     &::before {
       content: "";
@@ -66,6 +77,7 @@ th.price__tariff-option {
       width: 112px;
       transform: rotate(135deg);
     }
+
     &::after {
       content: "хит";
       position: absolute;
@@ -77,126 +89,158 @@ th.price__tariff-option {
     }
   }
 }
+
 .price__tarrif-name {
   display: block;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
 }
+
 .price__tarrif-value {
   font-size: 24px;
   font-weight: lighter;
   line-height: 30px;
 }
+
 .price__checked {
   border-top: none;
+
   &--yes {
     background: url(../img/icon-yes.svg) 93% center no-repeat;
     background-size: 31px 21px;
   }
+
   &--no {
     background: url(../img/icon-no.svg) 91.9% 45.6% no-repeat;
     background-size: 27px 26px;
   }
 }
+
 @media @tablet-widths {
   .price {
     padding-top: 8px;
-    background-color: rgb(242, 242, 242);
     padding-bottom: 0;
+    background-color: rgb(242, 242, 242);
+
     th,
     td {
       padding: 12px 18px 7px 19px
     }
   }
+
   .price__table-control {
     display: none
   }
+
   .price__inner {
     .container();
   }
+
   .price__table {
     margin: 0 auto;
     margin-bottom: 70px;
     margin-top: 82px;
     width: 620px;
+
     &--active {
       transform: translateX(0);
     }
   }
+
   th.price__hide-td {
     display: block;
     border-left: none;
   }
+
   .price__row:first-child .price__item:first-child {
-    border-top: 2px solid #e5e5e5
+    border-top: 2px solid #e5e5e5;
   }
+
   td.price__item {
     padding: 5px 17px 7px 15px;
     border-top-color: transparent;
     border-right-color: transparent;
   }
+
   .price__item {
     border-top-color: transparent;
     border-right-color: transparent;
     text-transform: none;
+
     &--hide {
       display: block;
     }
+
     &--mobile {
       display: none;
     }
   }
+
   .price__tariff-option {
     width: 157px;
     border-left: none;
     padding: 12px 0 5px 0;
+
     &--standart {
       &::before {
         left: -38px;
       }
+
       &::after {
         left: 8px;
         top: 5px;
       }
     }
+
     &:last-child {
       border-right: none;
     }
   }
+
   .price__checked {
     text-align: center;
     background-position: center;
   }
+
   .price__tarrif-name {
     font-size: 16px
   }
+
   .price__tarrif-value {
     font-size: 18px;
     line-height: 1;
   }
 }
+
 @media @desktop-widths {
+
   .price {
     padding-top: 74px;
+
     th {
       padding-top: 18px;
       padding-bottom: 19px;
     }
+
     td {
       padding: 10px 17px 17px 17px;
     }
   }
+
   .price__table {
     margin-bottom: 95px;
     width: 100%;
   }
+
   .price__item {
     font-size: 18px;
   }
+
   .price__tariff-option {
     width: 236px;
     padding: 16px 0 18px 0;
+
     &--standart {
       &::after {
         left: 8px;
@@ -204,9 +248,11 @@ th.price__tariff-option {
       }
     }
   }
+
   .price__tarrif-name {
     font-size: 18px
   }
+
   .price__tarrif-value {
     font-size: 24px
   }

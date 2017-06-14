@@ -63,6 +63,7 @@
 
 .gallery__call-to-action {
   .container();
+  width: 100%;
   padding: 20px 0 32px 0;
   line-height: 30px;
   text-align: center;
@@ -71,7 +72,7 @@
 
 @media @tablet-widths {
   .gallery {
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 93px;
     margin-bottom: 40px;
   }
@@ -106,5 +107,9 @@
     width: 780px;
     margin-bottom: 76px;
     font-size: 18px;
+  }
+
+  .gallery__call-to-action {
+    width: 100%;
   }
 }
