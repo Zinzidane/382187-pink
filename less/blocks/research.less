@@ -1,0 +1,83 @@
+.research {
+  display: none;
+}
+
+@media @tablet-widths {
+  .research {
+    padding-top: 57px;
+    display: block;
+
+    h2 {
+      margin-top: 23px;
+      margin-bottom: 0;
+      width: 175px;
+      color: #000000;
+      line-height: 36px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 14px;
+      line-height: 24px;
+
+    }
+  }
+  .research__inner {
+    .container();
+    padding-left: 309px;
+    padding-top: 12px;
+    padding-bottom: 77px;
+    position: relative;
+    &::before {
+      content: "24";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 240px;
+      height: 277px;
+      background: url(../img/icon-editor-diagram-fill.svg) center 60px no-repeat;
+      background-size: 178px 198px, 240px auto;
+      font-size: 96px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 300px;
+      color: rgb(240, 40, 86);
+    }
+  }
+  .research__link {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media @desktop-widths {
+  .research {
+    background-color: rgb(242, 242, 242);
+    padding-top: 5px;
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+    h2 {
+      width: 305px;
+      margin-top: 30px;
+      margin-bottom: 17px;
+    }
+  }
+  .research__inner {
+    padding: 60px 0 116px 365px;
+    &:before {
+      width: 298px;
+      height: 345px;
+      background-size: 253px 253px, 298px auto;
+      background-position: center 70px, center;
+      line-height: 380px;
+      font-size: 120px;
+    }
+  }
+  .research__link {
+    font-size: 18px;
+    margin-top: 34px;
+  }
+}

@@ -4,4 +4,73 @@
   padding: 0;
   text-align: center;
   background-color: rgb(242, 242, 242);
+
+}
+
+.upload__form {
+  .container();
+}
+
+.upload__photo {
+  .container();
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.upload__items-wrapper {
+  .container();
+  margin-bottom: 40px;
+}
+
+.upload-items {
+  margin-bottom: 42px;
+}
+
+.upload__controls {
+  margin-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.upload__range {
+  width: 100%;
+
+  &--visibility {
+  display: none;
+  }
+}
+
+.upload__btns {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.upload__btn {
+  margin-bottom: 12px;
+  height: 44px;
+}
+
+@media @tablet-widths {
+  .upload__form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .upload__photo {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  .upload__controls {
+    margin-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  .upload__range {
+    margin-bottom: 34px;
+    &--visibility {
+    display: block;
+    }
+  }
 }

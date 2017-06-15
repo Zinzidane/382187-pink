@@ -1,45 +1,259 @@
 .price {
-  background-color: rgb(242, 242, 242);
+  padding-top: 92px;
+  padding-bottom: 43px;
 
-  .price__wrapper{
+  td,
+  th {
+    padding: 13px 25px 16px 22px;
+    border: 2px solid #e5e5e5;
+    line-height: 30px;
+  }
+
+  th {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  td {
+    background-color: #ffffff;
+  }
+}
+
+th.price__tariff-option {
+  padding: 17px 25px 17px 25px;
+}
+
+.price__hide-td {
+  border: none;
+  display: none;
+}
+
+.price__inner {
+  margin: 0 auto;
+  width: 320px;
+  overflow: hidden;
+}
+
+.price__table {
+  padding-top: 50px;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+  width: 840px;
+
+  &--active {
+    transform: translateX(-30.8%);
+  }
+}
+
+.price__item {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  line-height: 30px;
+  white-space: nowrap;
+  text-align: left;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.price__tariff-option {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  width: 320px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: none;
+  background-color: #263341;
+  overflow: hidden;
+
+  &--standart {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -33px;
+      height: 25px;
+      width: 112px;
+      transform: rotate(135deg);
+    }
+
+    &::after {
+      content: "хит";
+      position: absolute;
+      transform: rotate(-45deg);
+      line-height: 30px;
+      left: 13px;
+      top: 12px;
+      z-index: 2;
+    }
+  }
+}
+
+.price__tarrif-name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.price__tarrif-value {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.price__checked {
+  border-top: none;
+
+  &--yes {
+    background: url(../img/icon-yes.svg) 93% center no-repeat;
+    background-size: 31px 21px;
+  }
+
+  &--no {
+    background: url(../img/icon-no.svg) 91.9% 45.6% no-repeat;
+    background-size: 27px 26px;
+  }
+}
+
+@media @tablet-widths {
+  .price {
+    padding-top: 8px;
+    padding-bottom: 0;
+    background-color: rgb(242, 242, 242);
+
+    th,
+    td {
+      padding: 12px 18px 7px 19px
+    }
+  }
+
+  .price__table-control {
+    display: none
+  }
+
+  .price__inner {
+    .container();
+  }
+
+  .price__table {
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 70px;
+    margin-top: 82px;
+    width: 620px;
+
+    &--active {
+      transform: translateX(0);
+    }
+  }
+
+  th.price__hide-td {
+    display: block;
+    border-left: none;
+  }
+
+  .price__row:first-child .price__item:first-child {
+    border-top: 2px solid #e5e5e5;
+  }
+
+  td.price__item {
+    padding: 5px 17px 7px 15px;
+    border-top-color: transparent;
+    border-right-color: transparent;
   }
 
   .price__item {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    text-transform: none;
+
+    &--hide {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
   }
 
-  .price__title {
-    background-color: rgb(40, 54, 69);
+  .price__tariff-option {
+    width: 157px;
+    border-left: none;
+    padding: 12px 0 5px 0;
+
+    &--standart {
+      &::before {
+        left: -38px;
+      }
+
+      &::after {
+        left: 8px;
+        top: 5px;
+      }
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .price__checked {
     text-align: center;
-    color: #ffffff;
+    background-position: center;
   }
 
-  .price__item-title {
-    margin-bottom: 10px;
+  .price__tarrif-name {
+    font-size: 16px
+  }
+
+  .price__tarrif-value {
     font-size: 18px;
-    line-height: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+    line-height: 1;
+  }
+}
+
+@media @desktop-widths {
+
+  .price {
+    padding-top: 74px;
+
+    th {
+      padding-top: 18px;
+      padding-bottom: 19px;
+    }
+
+    td {
+      padding: 10px 17px 17px 17px;
+    }
   }
 
-  .price__value {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: lighter;
-
+  .price__table {
+    margin-bottom: 95px;
+    width: 100%;
   }
 
-  .price__access {
-    padding: 22px 6.25% 24px 6.25%;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-    background-color: #ffffff;
-    border-bottom: 2px solid rgb(229, 229, 229);
+  .price__item {
+    font-size: 18px;
+  }
+
+  .price__tariff-option {
+    width: 236px;
+    padding: 16px 0 18px 0;
+
+    &--standart {
+      &::after {
+        left: 8px;
+        top: 8px;
+      }
+    }
+  }
+
+  .price__tarrif-name {
+    font-size: 18px
+  }
+
+  .price__tarrif-value {
+    font-size: 24px
   }
 }
