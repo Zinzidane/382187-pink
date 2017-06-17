@@ -62,7 +62,18 @@
   border: 3px solid #fff;
   border-radius: 50px;
   background-color: transparent;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
+
 .download__desc {
   font-size: 14px;
   font-weight: lighter;
@@ -74,10 +85,11 @@
 @media @tablet-widths {
   .download {
     .container();
+    background: url(../img/iphone-hand-mobile@1x.png) no-repeat right bottom;
+    background-size: auto 550px;
     padding-top: 46px;
     padding-bottom: 75px;
     margin-top: 0;
-    background: transparent;
   }
 
   .download__wrapper {
@@ -119,12 +131,12 @@
     width: 300px;
     padding-top: 0
   }
-  .app-download__link {
+  .download__link {
     margin-bottom: 64px;
     font-size: 21px;
     padding: 14px 0;
   }
-  .app-download__promo {
+  .download__promo {
     width: 240px;
     margin-bottom: 48px;
     p {

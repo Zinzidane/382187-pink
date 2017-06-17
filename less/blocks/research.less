@@ -8,18 +8,19 @@
     display: block;
 
     h2 {
+      margin: 0;
       margin-top: 23px;
-      margin-bottom: 0;
       width: 175px;
-      color: #000000;
+      font-size: 30px;
+      font-weight: bold;
       line-height: 36px;
+      color: #000000;
     }
 
     p {
       margin: 10px 0;
       font-size: 14px;
       line-height: 24px;
-
     }
   }
   .research__inner {
@@ -36,8 +37,9 @@
       width: 240px;
       height: 277px;
       background: url(../img/icon-editor-diagram-fill.svg) center 60px no-repeat;
-      background-size: 178px 198px, 240px auto;
+      background-size: 178px 198px;
       font-size: 96px;
+      font-weight: bold;
       text-align: center;
       vertical-align: middle;
       line-height: 300px;
@@ -48,21 +50,24 @@
     display: block;
     font-size: 14px;
     line-height: 24px;
+    color: rgb(240, 40, 86);
   }
 }
 
 @media @desktop-widths {
   .research {
-    background-color: rgb(242, 242, 242);
     padding-top: 5px;
-    p {
-      font-size: 18px;
-      line-height: 30px;
-    }
+    background-color: rgb(242, 242, 242);
+
     h2 {
       width: 305px;
       margin-top: 30px;
       margin-bottom: 17px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
     }
   }
   .research__inner {
@@ -70,8 +75,8 @@
     &:before {
       width: 298px;
       height: 345px;
-      background-size: 253px 253px, 298px auto;
-      background-position: center 70px, center;
+      background-size: 253px 253px;
+      background-position: center 70px;
       line-height: 380px;
       font-size: 120px;
     }
