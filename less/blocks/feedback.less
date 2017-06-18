@@ -1,7 +1,10 @@
 .feedback {
   .container();
   text-align: center;
-  padding-top: 44px;
+}
+
+.feedback__inner {
+  padding-top: 40px;
 }
 
 .feedback__title {
@@ -9,7 +12,8 @@
 }
 
 .feedback__promo {
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 33px;
   font-size: 24px;
   font-weight: lighter;
   line-height: 30px;
@@ -20,7 +24,7 @@
 .feedback__mail,
 .fedback__address {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   width: 260px;
   font-style: normal;
   text-align: center;
@@ -32,6 +36,7 @@
 
 .feedback__method {
   display: block;
+  margin-bottom: 5px;
   font-size: 18px;
 }
 
@@ -43,9 +48,13 @@
 }
 
 @media @tablet-widths {
+  .feedback__inner {
+    padding-top: 47px;
+  }
+
   .feedback__promo {
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
     width: 100%;
     font-size: 40px;
     line-height: 46px;
@@ -57,20 +66,28 @@
   }
 
   .feedback__method {
+    margin-bottom: 8px;
     text-transform: none;
   }
 
   .feedback__tel,
   .feedback__mail,
   .feedback__address {
-    width: 50%;
-    flex-grow: 1;
+    width: 300px;
+    margin: 0;
     margin-bottom: 0;
+    text-align: center;
+  }
+
+  .feedback__mail {
+    padding-left: 40px;
   }
 
   .feedback__address {
+    width: 620px;
     margin: auto;
     margin-top: 45px;
+    margin-bottom: 27px;
     padding: 0 2px;
     flex-grow: 0;
   }

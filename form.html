@@ -30,11 +30,12 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__title  page-header__title--form">Конкурс на самое бесбашенное путешествие с Пинк</h1>
+      <h1 class="page-header__title  page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
       <main class="page-content">
         <form class="form" action="https://echo.htmlacademy.ru/">
-            <p class="form__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+            <p class="form__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            <p class="form__promo  form__promo--hide">Пожалуйста, заполните форму ниже:</p>
             <fieldset class="form__group  form__group--initials">
             <div class="form__container">
               <div class="form__inner">
@@ -71,14 +72,18 @@
             <fieldset class="form__group  form__group--contacts">
               <legend class="form__legend  form__legend--show">Контактная информация</legend>
               <div class="form__container">
-                <label class="form__label" for="tel">Номер телефона</label>
-                <input class="form__input-text" type="tel" id="tel" name="tel" value="Номер пожалуйста">
-                <label class="form__label" for="email">Адрес почты</label>
-                <input class="form__input-text" type="email" id="email" name="email" value="Введите почту *">
+                <div class="form__inner">
+                  <label class="form__label" for="tel">Номер телефона</label>
+                  <input class="form__input-text" type="tel" id="tel" name="tel" value="Номер пожалуйста">
+                </div>
+                <div class="form__inner">
+                  <label class="form__label" for="email">Адрес почты</label>
+                  <input class="form__input-text" type="email" id="email" name="email" value="Введите почту *">
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__group  form__group--app">
-              <legend class="form__legend  form__legend--app">C каким приложением вы путешествовали</legend>
+              <legend class="form__legend  form__legend--app">C каким приложением путешествовали?</legend>
               <div class="form__container">
                 <input class="form__radio" type="radio" id="ios" name="os" value="ios" checked>
                 <label class="form__radio-label" for="ios">Pink для iOS</label>
@@ -91,11 +96,11 @@
             <fieldset class="form__group  form__group--textarea">
               <legend class="form__legend  form__legend--textarea">Опишите свои эмоции</legend>
               <div class="form__container">
-                <textarea class="form__textarea" name="emotions" id="" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+                <textarea class="form__textarea" name="emotions" id="" cols="30" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
               </div>
             </fieldset>
             <button class="form__btn" type="submit">Отправить форму</button>
-            <p class="form__reminder"><i>*</i> - Обязательные поля</p>
+            <p class="form__reminder"><i>*</i> &mdash; Обязательные поля</p>
             <div class="form__notice  form__notice--sent">
               <div class="form__inner-notice">
                 <div class="form__notice-title  form__notice-title--sent">Ваша заявка отправлена</div>

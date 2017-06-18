@@ -1,5 +1,5 @@
 .gallery {
-  margin-top: 45px;
+  margin-top: 47px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -22,7 +22,7 @@
     content: "Панорама дня";
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
     width: 140px;
     height: 36px;
     text-transform: uppercase;
@@ -50,11 +50,12 @@
   display: flex;
   flex-direction: column;
   line-height: 24px;
+  background-color: rgb(242, 242, 242);
 
   &--daily {
   .container();
   margin-bottom: 20px;
-  padding: 30px 15px;
+  padding: 19px 16px;
   background-color: rgb(242, 242, 242);
   }
 }
@@ -68,9 +69,8 @@
   margin-bottom: -6px;
 }
 
-.gallery__post-content {
-  padding: 30px 15px;
-  background-color: rgb(242, 242, 242);
+.gallery__info {
+  margin-bottom: 0;
 }
 
 .gallery__post-author {
@@ -87,7 +87,7 @@
 
 .gallery__post-text {
   margin: 0;
-  margin-top: 20px;
+  margin-bottom: 8px;
   padding: 0;
 }
 
@@ -97,6 +97,8 @@
   margin-top: auto;
   position: relative;
   width: 100%;
+  font-size: 12px;
+  letter-spacing: 0.2px;
   color: #d22856;
   text-transform: uppercase;
 }
@@ -111,10 +113,14 @@
 
 .gallery__call-to-action {
   .container();
-  padding: 20px 0 32px 0;
+  padding: 25px 0 40px 0;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  p {
+    margin: 0;
+  }
 }
 
 
@@ -125,16 +131,27 @@
   }
 
   .gallery__promo {
-    width: 560px;
+    width: 500px;
     margin-bottom: 76px;
     font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
   }
 
   .gallery__post-daily {
     width: 100%;
+    margin-bottom: 50px;
     &::before {
       top: 60px;
     }
+  }
+
+  .gallery__photo-daily {
+    height: 515px;
+  }
+
+  .gallery__post-photo {
+    height: 306px;
   }
 
   .gallery__post-wrapper {
@@ -146,16 +163,21 @@
     font-size: 14px;
   }
 
-
   .gallery__post-content {
     min-height: 155px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 29px;
 
     &--daily {
       min-height: 120px;
       flex-direction: row;
       flex-wrap: wrap;
-      padding-top: 24px;
-      padding-bottom: 21px;
+      margin-bottom: 0;
+      padding-top: 25px;
+      padding-left: 25px;
+      padding-right: 29px;
+      padding-bottom: 0px;
     }
   }
 
@@ -166,23 +188,40 @@
     }
   }
 
+  .gallery__post-text {
+    margin-bottom: 15px;
+  }
+
   .gallery__post-likes {
     justify-content: space-between;
 
     &--daily {
+      justify-content: flex-end;
       order: -1;
       margin-top: 0;
       margin-left: auto;
       width: 200px;
     }
+
+    .gallery__post-btn {
+      margin-left: 15px;
+    }
   }
 
   .gallery__post-btn {
+    margin-right: 0;
     order: 1;
   }
 
-  .gallery__post-text {
-    min-height: 63px;
+  .gallery__call-to-action {
+    padding: 45px 0 68px 0;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
   }
 }
 

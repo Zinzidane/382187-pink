@@ -5,36 +5,40 @@
 
 .form__promo {
   .container();
-  padding-top: 50px;
-  margin-bottom: 34px;
+  padding-top: 46px;
+  margin-bottom: 32px;
   line-height: 30px;
   text-align: center;
+
+  &--hide {
+    display: none;
+  }
 }
 
 .form__group {
   position: relative;
+  padding: 0;
   padding-top: 5px;
   border: none;
 
   &--initials {
-    padding-bottom: 23px;
+    padding-bottom: 20px;
   }
 
   &--contacts {
-    padding-top: 20px;
-    padding-bottom: 54px;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 
   &--app {
     background-color: rgb(242, 242, 242);
-    padding-bottom: 10px;
-    padding-top: 50px;
-    margin-bottom: 20px;
+    padding-top: 45px;
+    margin-bottom: 10px;
   }
 
   &--progress {
     margin-bottom: 0;
-    padding-top: 123px;
+    padding-top: 113px;
     background-color: rgb(242, 242, 242);
   }
 
@@ -50,15 +54,19 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    top: 45px;
+    top: 35px;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
     color: #d22856;
   }
 
+  > .form__legend--app {
+    top: 39px;
+  }
+
   > .form__legend--textarea {
-    top: 20px;
+    top: 25px;
   }
 
   > .form__legend--show {
@@ -73,13 +81,13 @@
 .form__label {
   display: block;
   padding-left: 22px;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
   color: #d22856;
   text-transform: uppercase;
 }
 
 .form__input-text {
-  margin-bottom: 29px;
+  margin-bottom: 23px;
   padding-left: 20px;
   width: 100%;
   height: 59px;
@@ -94,9 +102,9 @@
 .form__checkbox + .form__checkbox-label::before {
   content: "";
   position: absolute;
-  left: 19px;
-  width: 39px;
-  height: 39px;
+  left: 0;
+  width: 35px;
+  height: 35px;
   display: inline-block;
   vertical-align: middle;
   background-color: #fff;
@@ -106,10 +114,11 @@
 .form__checkbox-label {
   position: relative;
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
   padding-left: 67px;
   font-size: 18px;
-  line-height: 39px;
+  font-weight: normal;
+  line-height: 35px;
 }
 
 .form__radio {
@@ -119,7 +128,7 @@
 .form__radio-label {
   display: block;
   font-size: 18px;
-  margin-bottom: 46px;
+  margin-bottom: 51px;
   cursor: pointer;
   &:first-of-type {
     margin-top: 71px;
@@ -170,10 +179,12 @@
 }
 
 .form__textarea {
-  margin-top: 35px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   padding: 20px;
   width: 100%;
   min-height: 200px;
+  font-family: @font-family;
   resize: none;
   font-size: 18px;
   line-height: 30px;
@@ -187,7 +198,7 @@
   height: 63px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   padding: 17px 20px;
   font-size: 18px;
   font-weight: bold;
@@ -212,11 +223,14 @@
 }
 
 .form__reminder {
-  text-transform: uppercase;
-  text-align: center;
+  display: block;
   width: 280px;
   margin: 0 auto;
-  display: block;
+  margin-bottom: 10px;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+
   i {
     color: #d22856;
   }
@@ -279,9 +293,19 @@
   }
 
   .form__promo {
+    width: 510px;
+    padding-top: 93px;
+    margin-bottom: 0;
     order: -4;
     font-size: 18px;
-    margin-bottom: 64px;
+    letter-spacing: 0.15px;
+
+
+    &--hide {
+      display: block;
+      padding: 0;
+      margin-bottom: 75px;
+    }
   }
 
   .form__group {
@@ -293,28 +317,35 @@
     &--initials {
       border: none;
       order: -3;
-      margin-bottom: 25px;
+      margin-bottom: 0;
+      padding-bottom: 13px;
       padding-left: 0;
       padding-right: 0;
+
+      .form__container {
+        width: 100%;
+      }
     }
 
     &--app {
       background-color: #fff;
       order: -2;
-      padding-bottom: 11px;
+      padding-bottom: 9px;
+      margin-bottom: 65px;
     }
 
     &--progress {
       background-color: #fff;
-      padding-bottom: 10px;
-      padding-top: 53px
+      padding-bottom: 3px;
+      padding-top: 53px;
+      margin-bottom: 65px;
     }
 
     &--contacts {
       display: block;
-      padding: 44px 76px 30px 59px;
+      padding: 48px 46px 10px 44px;
       order: -1;
-      margin-bottom: 58px;
+      margin-bottom: 65px;
     }
 
     & > legend {
@@ -327,8 +358,15 @@
       background: white;
     }
 
-    > .form__legend-textarea {
-      top: 10px;
+    > .form__legend--app {
+      top: -15px;
+      padding-left: 23px;
+      padding-right: 26px;
+      letter-spacing: 0.4px;
+    }
+
+    > .form__legend--textarea {
+      top: -15px;
     }
 
     > .form__legend--show {
@@ -339,12 +377,55 @@
   .form__inner {
     display: flex;
     flex-direction: row;
+    margin-bottom: 56px;
 
     .form__label {
+      margin-bottom: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 0;
       padding-right: 20px;
-      line-height: 59px
+      height: 59px;
     }
   }
+
+  .form__input-text {
+    margin-bottom: 0;
+  }
+
+  .form__radio-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 52px;
+    cursor: pointer;
+    &:first-of-type {
+      margin-top: 58px;
+    }
+  }
+
+  .form__radio + .form__radio-label {
+    padding-left: 100px;
+  }
+
+  .form__radio + .form__radio-label::before {
+    margin-right: 0;
+    margin-left: 36px;
+  }
+
+  .form__radio:checked + .form__radio-label::after {
+    left: 48px;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  .form__textarea {
+    width: 496px;
+    margin-bottom: 57px;
+    margin-left: 33px;
+  }
+
 
   .form__btn {
     width: 300px;
@@ -354,6 +435,37 @@
       margin: 0 auto;
     }
   }
+
+  .form__group--contacts {
+    .form__inner {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      .form__label {
+        order: 1;
+        padding-left: 22px;
+      }
+    }
+  }
+
+
+  .form__checkbox + .form__checkbox-label::before {
+    left: 40px;
+  }
+
+  .form__checkbox-label {
+    margin-bottom: 48px;
+    padding-left: 100px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 35px;
+  }
+
 
   .form__reminder {
     line-height: 63px;
