@@ -90,9 +90,10 @@
   margin-bottom: 23px;
   padding-left: 20px;
   width: 100%;
-  height: 59px;
+  height: 63px;
   font-family: @font-family;
   font-size: 18px;
+  border: 2px solid #e5e5e5;
 }
 
 .form__checkbox {
@@ -350,6 +351,12 @@
       margin-bottom: 65px;
     }
 
+    &--textarea {
+      .form__container {
+        display: flex;
+      }
+    }
+
     & > legend {
       top: -15px;
       width: auto;
@@ -423,6 +430,7 @@
   }
 
   .form__textarea {
+    flex-grow: 1;
     width: 496px;
     margin-bottom: 60px;
     margin-left: 33px;
@@ -500,7 +508,7 @@
 
   .form__promo {
     width: 760px;
-    margin-bottom: 82px;
+    margin-bottom: 80px;
     padding-right: 15px;
     order: -4;
     span {
@@ -518,18 +526,36 @@
       margin-right: 50px;
       order: -3;
       padding: 0;
-      padding-top: 5px;
+      padding-top: 2px;
+
+      .form__container {
+        padding-right: 15px;
+      }
 
       .form__inner:last-of-type {
         margin-bottom: 0;
+      }
+
+      .form__inner {
+        margin-bottom: 55px;
+      }
+
+      .form__inner .form__label {
+        padding-top: 21px;
+        padding-bottom: 21px;
+      }
+
+      .form__inner .form__input-text {
+        width: 100%;
       }
     }
 
     &--app {
       width: 440px;
       order: -2;
-      padding-bottom: 20px;
-      margin-bottom: 55px;
+      padding-bottom: 8px;
+      margin-bottom: 66px;
+      border: 2px solid #e5e5e5;
     }
 
     &--contacts {
@@ -538,6 +564,7 @@
       padding-top: 42px;
       padding-bottom: 0;
       margin-bottom: 65px;
+      border: 2px solid #e5e5e5;
 
       .form__container {
         display: flex;
@@ -552,6 +579,12 @@
         margin-left: 40px;
       }
 
+      .form__label {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        height: 55px;
+      }
+
       .form__input-text{
         width: 371px;
       }
@@ -560,7 +593,8 @@
     &--progress {
       min-height: 230px;
       padding-top: 55px;
-      margin-bottom: 63px;
+      margin-bottom: 66px;
+      border: 2px solid #e5e5e5;
 
       .form__container {
         display: flex;
@@ -573,9 +607,14 @@
 
     &--textarea {
       width: 100%;
+      margin-bottom: 66px;
+      border: 2px solid #e5e5e5;
+
+      .form__container {
+        display: flex;
+      }
     }
   }
-
 
 
   .form__radio + .form__radio-label {
@@ -612,18 +651,25 @@
 
   .form__reminder {
     width: 320px;
-    line-height: 30px;
+    line-height: 56px;
     margin-bottom: 0;
+    padding-right: 15px;
     span {
       display: inline-block;
     }
   }
 
   .form__textarea {
+    margin: 0 auto;
     width: 836px;
+    flex-grow: 1;
     min-height: 124px;
+    height: 124px;
     margin-top: 45px;
     margin-bottom: 45px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 15px;
   }
 
   .form__btn {
