@@ -74,6 +74,7 @@
   .feedback__mail,
   .feedback__address {
     width: 300px;
+    flex-grow: 1;
     margin: 0;
     margin-bottom: 0;
     text-align: center;
@@ -86,6 +87,7 @@
   .feedback__address {
     width: 620px;
     margin: auto;
+    flex-grow: 0;
     margin-top: 45px;
     margin-bottom: 27px;
     padding: 0 2px;
@@ -95,7 +97,8 @@
 
 @media @desktop-widths {
   .feedback {
-    padding-top: 60px;
+    padding-top: 18px;
+    padding-bottom: 12px;
   }
 
   .feedback__promo {
@@ -103,6 +106,7 @@
     margin-bottom: 54px;
     width: 480px;
     font-size: 50px;
+    line-height: 60px;
   }
 
   .feedback__contacts-wrapper {
@@ -120,6 +124,8 @@
 
   .feedback__tel {
     width: 210px;
+    margin-right: 40px;
+    padding-right: 20px;
     order: 1;
   }
 

@@ -24,7 +24,7 @@
               <a href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item  main-nav__item--active">Конкурс</li>
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--academy">
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
@@ -34,8 +34,7 @@
     </header>
       <main class="page-content">
         <form class="form" action="https://echo.htmlacademy.ru/">
-            <p class="form__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-            <p class="form__promo  form__promo--hide">Пожалуйста, заполните форму ниже:</p>
+            <p class="form__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span>Пожалуйста, заполните форму ниже:</span></p>
             <fieldset class="form__group  form__group--initials">
             <div class="form__container">
               <div class="form__inner">
@@ -74,11 +73,11 @@
               <div class="form__container">
                 <div class="form__inner">
                   <label class="form__label" for="tel">Номер телефона</label>
-                  <input class="form__input-text" type="tel" id="tel" name="tel" value="Номер пожалуйста">
+                  <input class="form__input-text" type="tel" id="tel" name="tel" placeholder="Номер пожалуйста">
                 </div>
                 <div class="form__inner">
                   <label class="form__label" for="email">Адрес почты</label>
-                  <input class="form__input-text" type="email" id="email" name="email" value="Введите почту *">
+                  <input class="form__input-text" type="email" id="email" name="email" placeholder="Введите почту *">
                 </div>
               </div>
             </fieldset>
@@ -100,7 +99,7 @@
               </div>
             </fieldset>
             <button class="form__btn" type="submit">Отправить форму</button>
-            <p class="form__reminder"><i>*</i> &mdash; Обязательные поля</p>
+            <p class="form__reminder"><i>*</i> &mdash; Обязательные<span>для заполнения</span> поля</p>
             <div class="form__notice  form__notice--sent">
               <div class="form__inner-notice">
                 <div class="form__notice-title  form__notice-title--sent">Ваша заявка отправлена</div>

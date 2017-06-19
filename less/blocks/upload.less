@@ -262,8 +262,62 @@
 }
 
 @media @desktop-widths {
+  .upload {
+    .container();
+  }
+
+  .upload__form {
+    margin-left: 80px;
+  }
+
+  .upload__filter {
+    width: 410px;
+    margin-left: 50px;
+  }
+
+   .upload__filter-list {
+    width: 410px;
+    margin-bottom: 140px;
+  }
+
+  .upload__filter-item {
+    width: 410px;
+  }
+
+  .upload__filter-icon {
+    height: 48px;
+    margin-left: 0;
+    &--fill {
+      width: 44px;
+    }
+    &--crop {
+      width: 48px;
+    }
+    &--contrast {
+      width: 32px;
+      margin-left: 6px;
+    }
+  }
+
+  .upload__range {
+    width: 290px;
+    margin-right: 30px;
+  }
+
+  .upload__range-circle {
+    &--crop {
+      right: 200px;
+    }
+    &--fill {
+      left: 248px;
+    }
+    &--contrast {
+      left: 161px;
+    }
+  }
 
   .upload__btns {
+    width: 410px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
