@@ -1,11 +1,15 @@
 .price {
-  padding-top: 92px;
-  padding-bottom: 43px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 468px;
+  background: rgb(242, 242, 242) url(../img/bg-triangle-white.svg) no-repeat;
+  background-size: contain;
 
   td,
   th {
     padding: 13px 25px 16px 22px;
-    border: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
     line-height: 30px;
   }
 
@@ -16,6 +20,10 @@
 
   td {
     background-color: #ffffff;
+  }
+
+  input {
+    display: none;
   }
 }
 
@@ -61,7 +69,7 @@ th.price__tariff-option {
   position: relative;
   padding-top: 20px;
   padding-bottom: 12px;
-  width: 320px;
+  width: 280px;
   text-align: center;
   color: #ffffff;
   border-bottom: none;
@@ -75,6 +83,7 @@ th.price__tariff-option {
       left: -33px;
       height: 25px;
       width: 112px;
+      background-color: rgb(240, 40, 86);
       transform: rotate(135deg);
     }
 
@@ -121,6 +130,7 @@ th.price__tariff-option {
   .price {
     padding-top: 8px;
     padding-bottom: 0;
+    min-height: 376px;
     background-color: rgb(242, 242, 242);
 
     th,
@@ -139,8 +149,8 @@ th.price__tariff-option {
 
   .price__table {
     margin: 0 auto;
+    margin-top: 30px;
     margin-bottom: 70px;
-    margin-top: 82px;
     width: 620px;
 
     &--active {
@@ -158,13 +168,10 @@ th.price__tariff-option {
   }
 
   td.price__item {
-    padding: 5px 17px 7px 15px;
-    border-top-color: transparent;
-    border-right-color: transparent;
+    padding: 5px 27px 7px 15px;
   }
 
   .price__item {
-    border-top-color: transparent;
     border-right-color: transparent;
     text-transform: none;
 
@@ -216,7 +223,7 @@ th.price__tariff-option {
 @media @desktop-widths {
 
   .price {
-    padding-top: 74px;
+    padding-top: 67px;
 
     th {
       padding-top: 18px;
@@ -235,6 +242,10 @@ th.price__tariff-option {
 
   .price__item {
     font-size: 18px;
+
+    &--hide {
+      width: 236px;
+    }
   }
 
   .price__tariff-option {
