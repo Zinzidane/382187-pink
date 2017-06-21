@@ -22,12 +22,12 @@
   border: none;
 
   &--initials {
-    padding-bottom: 20px;
+    padding-bottom: 24px;
   }
 
   &--contacts {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 33px;
+    padding-bottom: 23px;
   }
 
   &--app {
@@ -38,7 +38,7 @@
 
   &--progress {
     margin-bottom: 0;
-    padding-top: 113px;
+    padding-top: 115px;
     background-color: rgb(242, 242, 242);
   }
 
@@ -54,7 +54,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    top: 35px;
+    top: 38px;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
@@ -87,7 +87,7 @@
 }
 
 .form__input-text {
-  margin-bottom: 23px;
+  margin-bottom: 18px;
   padding-left: 20px;
   width: 100%;
   height: 63px;
@@ -104,11 +104,11 @@
   content: "";
   position: absolute;
   left: 0;
-  width: 35px;
-  height: 35px;
+  width: 39px;
+  height: 39px;
   display: inline-block;
   vertical-align: middle;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
@@ -119,11 +119,16 @@
   padding-left: 67px;
   font-size: 18px;
   font-weight: normal;
-  line-height: 35px;
+  line-height: 39px;
+
+  &:last-child {
+    margin-bottom: 44px;
+  }
 }
 
 .form__checkbox:checked + .form__checkbox-label::before {
-  background: url(../img/icon-checkbox-yes.svg) center no-repeat
+  background: url(../img/icon-checkbox-yes.svg) center no-repeat;
+  background-color: #ffffff;
 }
 .form__checkbox + .form__checkbox-label:hover::before {
   border: 2px solid #283645;
@@ -317,7 +322,7 @@
   .form__promo {
     width: 510px;
     padding-top: 93px;
-    margin-bottom: 75px;
+    margin-bottom: 72px;
     order: -4;
     font-size: 18px;
     letter-spacing: 0.15px;
@@ -338,7 +343,7 @@
       border: none;
       order: -3;
       margin-bottom: 0;
-      padding-bottom: 13px;
+      padding-bottom: 67px;
       padding-left: 0;
       padding-right: 0;
 
@@ -351,7 +356,8 @@
       background-color: #fff;
       order: -2;
       padding-bottom: 9px;
-      margin-bottom: 65px;
+      margin-bottom: 63px;
+      border: 2px solid #e5e5e5;
     }
 
     &--progress {
@@ -359,6 +365,7 @@
       padding-bottom: 3px;
       padding-top: 53px;
       margin-bottom: 65px;
+      border: 2px solid #e5e5e5;
     }
 
     &--contacts {
@@ -366,9 +373,12 @@
       padding: 48px 46px 10px 44px;
       order: -1;
       margin-bottom: 65px;
+      border: 2px solid #e5e5e5;
     }
 
     &--textarea {
+      margin-bottom: 66px;
+      border: 2px solid #e5e5e5;
       .form__container {
         display: flex;
       }
@@ -403,15 +413,19 @@
   .form__inner {
     display: flex;
     flex-direction: row;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     .form__label {
       margin-bottom: 0;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 18px;
+      padding-bottom: 18px;
       padding-left: 0;
       padding-right: 20px;
-      height: 59px;
+      height: 64px;
     }
   }
 
@@ -449,8 +463,10 @@
   .form__textarea {
     flex-grow: 1;
     width: 496px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 42px;
     margin-left: 33px;
+    margin-right: 33px;
   }
 
 
@@ -468,14 +484,17 @@
       display: flex;
       width: 100%;
       flex-direction: column;
-      margin-bottom: 15px;
+      margin-bottom: 35px;
 
       &:last-of-type {
-        margin-bottom: 0;
+        margin-bottom: 20px;
       }
       .form__label {
         order: 1;
+        padding-top: 10px;
+        padding-bottom: 0;
         padding-left: 22px;
+        height: auto;
       }
     }
   }
@@ -609,7 +628,7 @@
 
     &--progress {
       min-height: 230px;
-      padding-top: 55px;
+      padding-top: 50px;
       margin-bottom: 66px;
       border: 2px solid #e5e5e5;
 
@@ -657,7 +676,7 @@
     display: block;
     width: 290px;
     margin-bottom: 40px;
-    padding-left: 85px;
+    padding-left: 80px;
     font-size: 18px;
     line-height: 39px;
   }
