@@ -1,8 +1,12 @@
 .reviews {
   .container();
-  padding-top: 25px;
+  padding-top: 42px;
   padding-bottom: 37px;
   min-height: 352px;
+}
+
+.reviews__wrapper {
+  padding-bottom: 51px;
 }
 
 .reviews__items {
@@ -15,10 +19,12 @@
   text-align: center;
 }
 
+.reviews__author {
+  margin-bottom: 13px;
+}
+
 .reviews__author-name {
   display: block;
-  padding-left: 80px;
-  padding-right: 80px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -36,13 +42,22 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.reviews__arrow-control {
+  display: none;
 }
 
 @media @tablet-widths {
   .reviews {
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding-top: 48px;
+    padding-bottom: 0;
     min-height: 302px;
+
+    .reviews__toggles {
+      bottom: 15px;
+    }
   }
 
   .reviews__item {
@@ -61,6 +76,7 @@
 
   .reviews__author-info {
     display: block;
+    line-height: 30px;
   }
 
   .reviews__description {
@@ -71,19 +87,57 @@
 
 @media @desktop-widths {
   .reviews {
-    min-height: 415px;
-    padding-bottom: 36px;
+    position: relative;
+    min-height: 410px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  .reviews__autor {
+  .reviews__wrapper {
+    padding-bottom: 0;
+  }
+
+  .reviews__item {
+    padding-top: 46px;
+  }
+
+  .reviews__author {
     padding-top: 35px;
+    margin-bottom: 0;
   }
 
   .reviews__author-name {
     font-size: 24px;
+    margin-bottom: 7px;
   }
+
   .reviews__author-info {
     font-size: 18px;
+  }
+
+  .reviews__description {
+    padding-top: 140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 820px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 73px;
+      left: 50%;
+      right: 50%;
+      width: 79px;
+      height: 63px;
+      transform: translateX(-50%);
+      font-size: 80px;
+      background: url(../img/icon-quotes.svg) center no-repeat;
+      background-size: 79px 63px;
+    }
   }
 
   .reviews__arrow-control {
@@ -97,12 +151,14 @@
     height: 41px;
     top: 50%;
     cursor: pointer;
-    opacity: 0.3;
+    border: none;
 
     &--prev {
+      background: url(../img/icon-review-arrow-left.svg) no-repeat;
       left: 0;
     }
     &--next {
+      background: url(../img/icon-review-arrow-right.svg) no-repeat;
       right: 0;
     }
     &:hover {

@@ -5,6 +5,7 @@
   background: rgb(242, 242, 242) url(../img/bg-triangle-white.svg) no-repeat;
   background-size: contain;
 
+
   td,
   th {
     padding: 13px 25px 16px 22px;
@@ -37,7 +38,9 @@ th.price__tariff-option {
 }
 
 .price__inner {
+  position: relative;
   margin: 0 auto;
+  padding-bottom: 20px;
   width: 320px;
   overflow: hidden;
 }
@@ -47,6 +50,7 @@ th.price__tariff-option {
   margin-bottom: 31px;
   text-transform: uppercase;
   width: 840px;
+  overflow: hidden;
 
   &--active {
     transform: translateX(-30.8%);
@@ -145,6 +149,7 @@ th.price__tariff-option {
 
   .price__inner {
     .container();
+    padding-bottom: 0;
   }
 
   .price__table {
@@ -223,7 +228,7 @@ th.price__tariff-option {
 @media @desktop-widths {
 
   .price {
-    padding-top: 67px;
+    padding-top: 35px;
 
     th {
       padding-top: 18px;
@@ -235,8 +240,12 @@ th.price__tariff-option {
     }
   }
 
+  .price__inner {
+    padding-top: 35px;
+    padding-bottom: 24px;
+  }
+
   .price__table {
-    margin-bottom: 95px;
     width: 100%;
   }
 
@@ -261,7 +270,8 @@ th.price__tariff-option {
   }
 
   .price__tarrif-name {
-    font-size: 18px
+    font-size: 18px;
+    margin-bottom: 5px;
   }
 
   .price__tarrif-value {
