@@ -63,6 +63,7 @@
   .feedback__contacts-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .feedback__method {
@@ -80,8 +81,8 @@
     text-align: center;
   }
 
-  .feedback__mail {
-    padding-left: 40px;
+  .feedback__tel {
+    margin-right: 12px;
   }
 
   .feedback__address {
@@ -97,34 +98,41 @@
 
 @media @desktop-widths {
   .feedback {
-    padding-top: 18px;
+    padding-top: 0;
     padding-bottom: 12px;
+  }
+
+  .feedback__inner {
+    padding-top: 60px;
   }
 
   .feedback__promo {
     margin: 0 auto;
-    margin-bottom: 54px;
+    margin-bottom: 59px;
     width: 480px;
     font-size: 50px;
     line-height: 60px;
   }
 
   .feedback__contacts-wrapper {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .feedback__text {
-    padding-top: 21px;
+    padding-top: 0;
     display: block;
+    line-height: 30px;
   }
 
   .feedback__method {
+    margin-bottom: 23px;
     text-transform: none;
   }
 
   .feedback__tel {
     width: 210px;
     margin-right: 40px;
+    margin-left: 10px;
     padding-right: 20px;
     order: 1;
   }
@@ -132,6 +140,8 @@
   .feedback__address {
     margin: 0;
     margin-top: 0;
+    margin-left: 15px;
+    margin-right: 30px;
     width: 220px;
     order: 2;
   }
@@ -139,5 +149,7 @@
   .feedback__mail {
     width: 245px;
     order: 3;
+    margin-left: 0;
+    padding-left: 25px;
   }
 }
