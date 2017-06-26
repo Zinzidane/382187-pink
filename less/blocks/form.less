@@ -94,6 +94,16 @@
   font-family: @font-family;
   font-size: 18px;
   border: 2px solid #e5e5e5;
+  letter-spacing: 0.3px;
+  color: #283645;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
 }
 
 .form__checkbox {
@@ -212,6 +222,13 @@
   line-height: 30px;
   color: #283645;
   border: 2px solid rgb(242, 242, 242);
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
 }
 
 .form__btn {
@@ -226,6 +243,7 @@
   font-weight: bold;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
   text-transform: uppercase;
   background-color: #00ac6a;
   border: none;
@@ -326,7 +344,6 @@
     font-size: 18px;
     letter-spacing: 0.15px;
 
-
     span {
       display: block;
     }
@@ -420,9 +437,9 @@
 
     .form__label {
       margin-bottom: 0;
-      padding-top: 18px;
-      padding-bottom: 18px;
-      padding-left: 5px;
+      padding-top: 20px;
+      padding-bottom: 16px;
+      padding-left: 0;
       padding-right: 20px;
       height: 64px;
     }
@@ -431,7 +448,7 @@
   .form__input-text {
     margin-bottom: 0;
     padding-right: 60px;
-    padding-left: 17px;
+    padding-left: 20px;
   }
 
   .form__input-wrapper {
@@ -441,10 +458,10 @@
     &::before {
       content: "";
       position: absolute;
-      right: 0;
-      top: 1px;
-      width: 60px;
-      height: 60px;
+      right: 2px;
+      top: 2px;
+      width: 59px;
+      height: 59px;
       z-index: 2;
     }
 
@@ -545,7 +562,6 @@
     margin-right: 0;
     margin-bottom: 50px;
     line-height: 63px;
-    vertical-align: middle;
     text-align: right;
   }
 
@@ -571,12 +587,13 @@
 @media @desktop-widths {
 
   .form__promo {
-    width: 760px;
+    width: 770px;
     margin-bottom: 80px;
-    padding-right: 15px;
     order: -4;
+    letter-spacing: 0.25px;
     span {
       display: inline-block;
+      vertical-align: top;
     }
   }
 
@@ -627,7 +644,7 @@
       order: -1;
       padding-top: 42px;
       padding-bottom: 0;
-      margin-bottom: 65px;
+      margin-bottom: 64px;
       border: 2px solid #e5e5e5;
 
       .form__container {
@@ -650,13 +667,13 @@
       }
 
       .form__input-wrapper {
-        width: 371px;
+        width: 375px;
       }
     }
 
     &--progress {
       min-height: 230px;
-      padding-top: 50px;
+      padding-top: 52px;
       margin-bottom: 66px;
       border: 2px solid #e5e5e5;
 
@@ -702,7 +719,7 @@
   .form__checkbox-wrapper {
     display: flex;
     position: relative;
-    width: 30%;
+    width: 29.5%;
     margin-bottom: 0;
     &--selfie {
       order: -3;
@@ -718,7 +735,7 @@
   .form__checkbox-label {
     display: block;
     width: 290px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     padding-left: 61px;
     font-size: 18px;
     line-height: 39px;
@@ -730,11 +747,12 @@
 
   .form__reminder {
     width: 320px;
-    line-height: 56px;
     margin-bottom: 0;
-    padding-right: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
     span {
       display: inline-block;
+      vertical-align: top;
     }
   }
 

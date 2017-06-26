@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Пинк: Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
@@ -126,8 +126,9 @@
       </section>
       <section class="research">
         <div class="research__inner">
-          <h2>Эффект <span>на 24 часа!</span></h2>
-          <p>Британские ученые провели исследования <span>и доказали, что положительный эффект</span><span>от использования приложения длится</span> целые сутки!</p>
+          <h2 class="research__title">Эффект <span>на 24 часа!</span></h2>
+          <p class="research__text">Британские ученые провели исследования <span>и доказали, </span><span> что положительный эффект</span>
+          <span> от использования приложения</span> длится целые сутки!</p>
           <a class="research__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
@@ -151,15 +152,15 @@
             </li>
             <li class="reviews__item  slider__item" id="slide2">
               <div class="reviews__author">
-                <cite class="reviews__author-name">Николай  </cite>
-                <span class="reviews__author-info">25 лет, водитель трамвая</span>
+                <cite class="reviews__author-name">Сергей Васильев  </cite>
+                <span class="reviews__author-info">29 лет, экономист</span>
               </div>
-              <blockquote class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+              <blockquote class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я нашел новую работу благодаря комментариям к выложенной фотографии!»</blockquote>
             </li>
             <li class="reviews__item  slider__item" id="slide3">
               <div class="reviews__author">
-                <cite class="reviews__author-name">Николай Петр </cite>
-                <span class="reviews__author-info">25 лет, водитель трамвая</span>
+                <cite class="reviews__author-name">Никита Немов </cite>
+                <span class="reviews__author-info">26 лет, водитель трамвая</span>
               </div>
               <blockquote class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
             </li>
@@ -248,11 +249,11 @@
           <div class="feedback__contacts-wrapper">
             <p class="feedback__tel">
               <b class="feedback__method">Звоните:</b>
-              <a class="feedback__text" href="#">+7 (812) 555-66-66</a>
+              <a class="feedback__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </p>
             <p class="feedback__mail">
               <b class="feedback__method">Пишите:</b>
-              <a class="feedback__text" href="#">mail@htmlacademy.ru</a>
+              <a class="feedback__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
             <p class="feedback__address">
               <b class="feedback__method">Приезжайте в гости:</b>
@@ -375,5 +376,6 @@
         </a>
       </section>
     </footer>
+    <script src="js/srcipt.js"></script>
   </body>
 </html>
