@@ -4,12 +4,45 @@
 
 @media @tablet-widths {
   .research {
-    padding-top: 57px;
     display: block;
   }
+
+  .research__inner {
+    position: relative;
+    width: 620px;
+    padding: 60px 0 70px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    &::before {
+      content: "24";
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 240px;
+      height: 277px;
+      background: url(../img/icon-editor-diagram-fill.svg) center 60px no-repeat, url(../img/icon-timer.svg) center no-repeat;
+      background-size: 198px 198px, 240px auto;
+      font-size: 96px;
+      font-weight: 700;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 300px;
+      color: rgb(240, 40, 86);
+    }
+  }
+
+  .research__promo {
+    width: 310px;
+    padding: 15px 0 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+
   .research__title {
     margin: 0;
-    margin-top: 25px;
     width: 175px;
     font-size: 30px;
     font-weight: bold;
@@ -23,7 +56,6 @@
 
   .research__text {
     margin: 10px 0;
-    padding-right: 10px;
     font-size: 14px;
     letter-spacing: 0.35px;
     line-height: 24px;
@@ -33,29 +65,7 @@
     }
   }
 
-  .research__inner {
-    .container();
-    padding-left: 309px;
-    padding-top: 12px;
-    padding-bottom: 77px;
-    position: relative;
-    &::before {
-      content: "24";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 240px;
-      height: 277px;
-      background: url(../img/icon-editor-diagram-fill.svg) center 60px no-repeat, url(../img/icon-timer.svg) center no-repeat;
-      background-size: 198px 198px, 240px auto;
-      font-size: 96px;
-      font-weight: bold;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 300px;
-      color: rgb(240, 40, 86);
-    }
-  }
+
   .research__link {
     display: block;
     font-size: 14px;
@@ -71,8 +81,29 @@
     background-color: rgb(242, 242, 242);
   }
 
+  .research__inner {
+    width: 940px;
+    padding-top: 0;
+    padding-bottom: 100px;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+      background-size: 253px 253px, 298px auto;
+      background-position: center 70px, center;
+      line-height: 380px;
+      font-size: 120px;
+    }
+  }
+
+  .research__promo {
+    width: 530px;
+    margin-right: 45px;
+    padding-top: 40px;
+  }
+
   .research__title {
-    width: 380px;
+    width: 300px;
     margin-top: 30px;
     margin-bottom: 22px;
     span {
@@ -92,17 +123,6 @@
     }
   }
 
-  .research__inner {
-    padding: 60px 0 116px 365px;
-    &:before {
-      width: 298px;
-      height: 345px;
-      background-size: 253px 253px, 298px auto;
-      background-position: center 70px, center;
-      line-height: 380px;
-      font-size: 120px;
-    }
-  }
   .research__link {
     font-size: 18px;
     margin-top: 34px;
